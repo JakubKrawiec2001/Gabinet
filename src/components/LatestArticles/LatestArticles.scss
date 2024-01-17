@@ -1,0 +1,127 @@
+@use "../../styles/colors" as *;
+
+.la-container {
+	margin-top: 6em;
+	.la-heading-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.la-items-container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 3em;
+		margin-top: 4em;
+		.la-item {
+			width: 80%;
+			background-color: white;
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+			border-radius: 10px;
+			overflow: hidden;
+			.la-img {
+				width: 100%;
+				height: 150px;
+				object-fit: cover;
+			}
+			.la-item-content {
+				padding: 1em;
+				.la-title {
+					font-size: 1.8rem;
+					font-weight: bold;
+					color: $main-dark-blue;
+				}
+				.la-desc {
+					margin: 1em 0;
+					font-size: 1.4rem;
+					color: #777;
+				}
+				.la-link {
+					display: flex;
+					align-items: center;
+					font-size: 1.6rem;
+					color: $main-dark-blue;
+					font-weight: bold;
+					.la-link-icon {
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.la-container {
+		.la-items-container {
+			.la-item {
+				width: 65%;
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.la-container {
+		.la-items-container {
+			.la-item {
+				width: 35%;
+				.la-item-content {
+					padding: 1.5em;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1024px) {
+	.la-container {
+		.la-items-container {
+			margin-top: 6em;
+
+			.la-item {
+				width: 340px;
+				.la-item-content {
+					padding: 2em;
+					.la-title {
+						font-size: 2.2rem;
+					}
+					.la-desc {
+						font-size: 1.6rem;
+					}
+					.la-link {
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.la-container {
+		.la-items-container {
+			margin-top: 8em;
+			justify-content: space-between;
+			gap: 0;
+			padding: 1em;
+			.la-item {
+				width: 280px;
+				.la-item-content {
+					.la-title {
+						width: 80%;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1400px) {
+	.la-container {
+		.la-items-container {
+			padding: 0;
+			.la-item {
+				width: 300px;
+			}
+		}
+	}
+}

@@ -188,7 +188,7 @@
 		top: 60%;
 	}
 	.bg-blur-right-hero {
-		top: 75%;
+		top: 120%;
 	}
 }
 
@@ -199,7 +199,7 @@
 		}
 	}
 	.bg-blur-right-hero {
-		top: 90%;
+		top: 130%;
 	}
 }
 
@@ -208,5 +208,11 @@
 		.hero-img {
 			height: 40vh;
 		}
+	}
+	.bg-blur-left-hero {
+		top: 40%;
+	}
+	.bg-blur-right-hero {
+		top: 80%;
 	}
 }

@@ -149,3 +149,11 @@ button {
 		filter: blur(100px);
 	}
 }
+
+
+@media screen and (min-width: 2000px) {
+	.bg-blur {
+		width: 200px;
+		filter: blur(140px);
+	}
+}
