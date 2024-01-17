@@ -3,6 +3,7 @@
 	margin-top: 6em;
 	background-color: $main-green-transparent;
 	padding: 3em 0;
+	overflow: hidden;
 	.review-container {
 		.review-heading-container {
 			display: flex;
@@ -143,7 +144,8 @@
 @media screen and (min-width: 1100px) {
 	.reviews {
 		margin-top: 12em;
-		padding-bottom: 8em;
+		padding-top: 8em;
+		padding-bottom: 12em;
 		.review-container {
 			.slider-box {
 				display: flex;

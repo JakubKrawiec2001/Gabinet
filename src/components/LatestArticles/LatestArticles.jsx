@@ -31,6 +31,7 @@ const LatestArticles = () => {
 					);
 				})}
 			</div>
+			<div className="bg-blur bg-blur-right-la"></div>
 		</div>
 	);
 };

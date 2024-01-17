@@ -6,10 +6,13 @@ import Treatments from "./pages/Treatments/Treatments";
 import Office from "./pages/Office/Office";
 import Contact from "./pages/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./hooks/useScrollToTop";
 
 function App() {
 	return (
 		<div className="App">
+			<ScrollToTop></ScrollToTop>
 			<Navbar></Navbar>
 			<Routes>
 				<Route path="/" element={<Home></Home>}></Route>
@@ -18,6 +21,7 @@ function App() {
 				<Route path="/lekarze" element={<Doctors></Doctors>}></Route>
 				<Route path="/kontakt" element={<Contact></Contact>}></Route>
 			</Routes>
+			<Footer></Footer>
 		</div>
 	);
 }

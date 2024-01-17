@@ -3,7 +3,6 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
 	gap: 1em;
 	margin-top: 3em;
@@ -13,17 +12,18 @@
 		height: 100%;
 		width: 100%;
 		background: linear-gradient(
-			90deg,
+			180deg,
 			#f8f8ff 50.37%,
 			rgba(248, 248, 255, 0) 100.28%
 		);
-		rotate: 90deg;
+
 		z-index: 0;
 	}
 	.hero-text-container {
 		padding: 1em;
 		text-align: center;
 		z-index: 1;
+
 		.section-heading-container {
 			.section-heading-small-text-box {
 				justify-content: center;
@@ -62,6 +62,7 @@
 	}
 	.hero-img {
 		height: 40vh;
+		width: 100%;
 	}
 	.hero-img-border {
 		position: absolute;
@@ -83,6 +84,7 @@
 	top: 40%;
 	right: 0;
 }
+
 @media screen and (min-width: 414px) {
 	.hero {
 		.hero-text-container {
@@ -115,7 +117,11 @@
 		flex-direction: row;
 		gap: 0;
 		.hero-bg-gradient {
-			rotate: 0deg;
+			background: linear-gradient(
+				90deg,
+				#f8f8ff 50.37%,
+				rgba(248, 248, 255, 0) 100.28%
+			);
 		}
 		.hero-text-container {
 			text-align: left;

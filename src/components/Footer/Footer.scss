@@ -1,0 +1,162 @@
+@use "../../styles/colors" as *;
+
+.footer {
+	background-color: $main-dark-blue;
+	margin-top: 10em;
+	padding-top: 5em;
+	padding-bottom: 4em;
+	.footer-container {
+		color: $white;
+		.footer-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			gap: 4em;
+			padding: 1em;
+			.footer-item {
+				.footer-logo {
+					font-size: 3rem;
+					font-weight: bold;
+					margin-bottom: 0.3em;
+					color: $main-green;
+				}
+				.footer-icons-box {
+					display: flex;
+					justify-content: center;
+					gap: 1.5em;
+					margin-top: 2em;
+
+					.footer-icon {
+						font-size: 2rem;
+						transition: all 0.3s ease;
+						cursor: pointer;
+						&:hover {
+							color: $main-green;
+						}
+					}
+				}
+				.footer-heading {
+					font-size: 1.8rem;
+					font-weight: bold;
+					margin-bottom: 0.5em;
+				}
+				.footer-text {
+					font-size: 1.4rem;
+					font-weight: 300;
+					margin-top: 0.5em;
+				}
+
+				&:nth-child(2) {
+					.footer-text {
+						cursor: pointer;
+						transition: all 0.3s ease;
+						&:hover {
+							color: $main-green;
+						}
+					}
+				}
+			}
+		}
+		.footer-date {
+			margin-top: 5em;
+			padding-top: 4em;
+			border-top: 1px solid #777;
+			.footer-date-text {
+				text-align: center;
+				font-size: 1.2rem;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.footer {
+		.footer-container {
+			.footer-content {
+				padding: 0;
+				.footer-item {
+					.footer-logo {
+						font-size: 3.5rem;
+					}
+					.footer-icons-box {
+						.footer-icon {
+							font-size: 2.5rem;
+						}
+					}
+					.footer-heading {
+						font-size: 2rem;
+					}
+					.footer-text {
+						font-size: 1.6rem;
+					}
+					&:first-child {
+						width: 70%;
+					}
+				}
+			}
+			.footer-date {
+				.footer-date-text {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.footer {
+		margin-top: 20em;
+		padding-top: 12em;
+		.footer-container {
+			.footer-content {
+				padding: 1em;
+				justify-content: space-between;
+				align-items: flex-start;
+				flex-direction: row;
+				text-align: left;
+				.footer-item {
+					.footer-icons-box {
+						justify-content: flex-start;
+					}
+					&:first-child {
+						width: 20%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.footer {
+		padding-top: 10em;
+
+		.footer-container {
+			.footer-content {
+				.footer-item {
+					.footer-logo {
+						font-size: 4rem;
+					}
+					.footer-icons-box {
+						.footer-icon {
+							font-size: 3rem;
+						}
+					}
+					.footer-heading {
+						font-size: 2rem;
+					}
+					.footer-text {
+						font-size: 1.8rem;
+					}
+				}
+			}
+			.footer-date {
+				.footer-date-text {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
