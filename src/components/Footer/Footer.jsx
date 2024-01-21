@@ -2,12 +2,26 @@ import "./Footer.scss";
 import { FaPhoneVolume, FaFacebook } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { Link } from "react-router-dom";
+import provitaLogo from "../../assets/icons/Provita-logo.svg";
 
 const Footer = () => {
 	let year = new Date().getFullYear();
 
 	return (
 		<div className="footer">
+			<div className="partner-container">
+				<img src={provitaLogo} alt="Provita Logo" className="partner-icon" />
+				<div className="partner-text-box">
+					<p className="partner-text">
+						Nasz Partner <br /> w Badaniach Klinicznych
+					</p>
+					<button className="partner-btn">
+						<a href="https://provitacm.pl" target="_blank" rel="noreferrer">
+							Dowiedz się więcej
+						</a>
+					</button>
+				</div>
+			</div>
 			<div className="wrapper footer-container">
 				<div className="footer-content">
 					<div className="footer-item">
@@ -49,10 +63,10 @@ const Footer = () => {
 						<br />
 						<br />
 						<p className="footer-heading">Zapraszamy</p>
-						<p className="footer-text">Poniedziałek: &nbsp; 17:00 - 21:00</p>
-						<p className="footer-text">Środa: &nbsp; 17: 00 - 20:00</p>
-						<p className="footer-text">Czwartek: &nbsp; 17: 00 - 20:00</p>
-						<p className="footer-text">Piątek: &nbsp; 17: 00 - 20:00</p>
+						<p className="footer-text">Poniedziałek: &nbsp; 16:30 - 20:00</p>
+						<p className="footer-text">Środa: &nbsp; 16:30 - 20:00</p>
+						<p className="footer-text">Czwartek: &nbsp; 16:30 - 20:00</p>
+						<p className="footer-text">Piątek: &nbsp; 16:30 - 20:00</p>
 					</div>
 					<div className="footer-item">
 						<p className="footer-heading">Kontakt</p>

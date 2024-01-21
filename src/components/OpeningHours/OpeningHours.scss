@@ -1,0 +1,168 @@
+@use "../../styles/colors" as *;
+.oh-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4em;
+	margin-top: 4em;
+	padding: 1em;
+	.oh-l {
+		display: flex;
+		width: 300px;
+		gap: 1em;
+		order: 1;
+		.col {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			.oh-image {
+				aspect-ratio: 1 / 1;
+				width: 100%;
+				object-fit: cover;
+				border-radius: 10px;
+			}
+			&:nth-child(2) {
+				margin-top: 1.5em;
+			}
+		}
+	}
+	.oh-r {
+		order: 0;
+		.oh-content {
+			margin-top: 2em;
+			text-align: center;
+			.oh-text {
+				font-size: 1.3rem;
+				.oh-span {
+					font-weight: 600;
+				}
+			}
+			.oh-items-box {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 2em;
+				.oh-item {
+					.oh-text {
+						&:first-child {
+							font-weight: 600;
+							margin-bottom: 0.5em;
+							color: $main-green;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.oh-container {
+		.oh-l {
+			width: 350px;
+		}
+		.oh-r {
+			.oh-content {
+				.oh-text {
+					font-size: 1.7rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.oh-container {
+		margin-top: 6em;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 2em;
+		.oh-l {
+			width: 330px;
+			order: 0;
+		}
+		.oh-r {
+			width: 55%;
+			order: 1;
+
+			.oh-content {
+				text-align: left;
+				.oh-items-box {
+					margin-top: 3em;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1024px) {
+	.oh-container {
+		.oh-l {
+			width: 450px;
+		}
+		.oh-r {
+			width: 50%;
+		}
+	}
+}
+@media screen and (min-width: 1100px) {
+	.oh-container {
+		.oh-l {
+			width: 450px;
+		}
+		.oh-r {
+			width: 55%;
+			.oh-content {
+				.oh-text {
+					font-size: 2rem;
+				}
+				.oh-items-box {
+					justify-content: flex-start;
+					gap: 4em;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.oh-container {
+		margin-top: 12em;
+		.oh-l {
+			width: 500px;
+		}
+		.oh-r {
+			.oh-content {
+				.oh-text {
+					font-size: 2.2rem;
+				}
+				.oh-items-box {
+					.oh-item {
+						.oh-name {
+							font-size: 2.4rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.oh-container {
+		gap: 0;
+		.oh-l {
+			width: 550px;
+		}
+		.oh-r {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.oh-container {
+		padding: 0;
+		.oh-r {
+			width: 55%;
+		}
+	}
+}

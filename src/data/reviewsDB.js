@@ -1,72 +1,50 @@
 export const reviews = [
 	{
 		id: 1,
-		name: "Marek Kowalski",
+		name: "Beata Stasiak",
 		rate: 5,
 		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit",
+			"Wizyta zawsze w miłej atmosferze , zawsze wszystko wyjaśni , odpowie na pytania . Jestem po zabiegu , i dalej kontroluje mój stan zdrowia u Pana Doktora .  Polecam Serdecznie .",
 	},
 	{
 		id: 2,
-		name: "Janek Kowalski",
+		name: "Olga Latusek",
 		rate: 5,
 		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+			"Wspaniały lekarz, wszystko na spokojnie wytłumaczy, postawi trafna diagnozę i pomoże wrócić do zdrowia. Lekarz z powołania! Nie mogłam na lepszego trafić. Bez żadnego zastanowienia polecam.",
 	},
 	{
 		id: 3,
-		name: "Kuba Kowalski",
+		name: "Juliusz Wojnar",
 		rate: 5,
 		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit",
+			"Polecam konkretny,miły i bardzo empatyczny lekarz, wszystko wytłumaczy na spokojnie i poda konkretną diagnozę jesteśmy bardzo zadowoleni z dzisiejszej wizyty jeszcze raz polecam.",
 	},
 	{
 		id: 4,
-		name: "Tomek Kowalski",
+		name: "Paulina Wilk",
 		rate: 5,
 		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"Najlepszy lekarz jakiego znam, bardzo miły, uprzejmy poznał się na chorobie i wyleczył z choroby. Serdecznie polecam pana doktora",
 	},
 	{
 		id: 5,
-		name: "Jacek Kowalski",
+		name: "Mateusz Leśniewski",
 		rate: 5,
 		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit",
+			"Polecam w 100%. Podejście do pacjenta pełen profesjonalizm miła atmosfera. Lekarz znający się na rzeczy!",
 	},
 	{
 		id: 6,
-		name: "Piotrek Kowalski",
+		name: "Michał Urbański",
 		rate: 5,
-		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit",
+		review: "Pełen profesjonalizm!!!!! Polecam w 100%",
 	},
 	{
 		id: 7,
-		name: "Mateusz Kowalski",
+		name: "Julita Julita",
 		rate: 5,
 		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit",
-	},
-	{
-		id: 8,
-		name: "Sebastian Kowalski",
-		rate: 5,
-		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit",
-	},
-	{
-		id: 9,
-		name: "Wiktor Kowalski",
-		rate: 5,
-		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit",
-	},
-	{
-		id: 10,
-		name: "Kacper Kowalski",
-		rate: 5,
-		review:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit",
+			"Z czystym sumieniem polecam dr. Krawca. Pełen profesjonalizm odpowiednia osoba na odpowiednim miejscu ☺️ Doktor z powołania.",
 	},
 ];

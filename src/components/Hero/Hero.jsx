@@ -1,6 +1,7 @@
 import "./Hero.scss";
 import heroImg from "../../assets/images/hero-img.jpg";
 import plus from "../../assets/icons/plus.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 	return (
@@ -24,11 +25,12 @@ const Hero = () => {
 						</h1>
 					</div>
 					<p className="hero-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-						odio pariatur tenetur similique nisi voluptas quo nesciunt.
+						Stworzyliśmy miejsce gdzie otrzymają Państwo poradę, pomoc oraz
+						możliwość diagnostyki urologicznej.
 					</p>
-
-					<button className="hero-btn">Poproś o Wycenę</button>
+					<Link to="/zespol">
+						<button className="hero-btn">Poznaj Nas</button>
+					</Link>
 				</div>
 				<img src={heroImg} alt="" className="hero-img" />
 				<div className="hero-img-border"></div>

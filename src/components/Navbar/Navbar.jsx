@@ -1,5 +1,5 @@
 import "./Navbar.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MdPhoneInTalk } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import { IoMenu, IoClose } from "react-icons/io5";
@@ -11,21 +11,23 @@ const Navbar = () => {
 	return (
 		<nav className="navbar">
 			<div className="wrapper navbar-container">
-				<p className="logo">Uromed</p>
+				<Link to="/">
+					<p className="logo">Uromed</p>
+				</Link>
 				<div className="nav-links">
 					<NavLink to="/" className="nav-link">
 						Strona Główna
 					</NavLink>
-					<NavLink to="/treatments" className="nav-link">
+					<NavLink to="/zabiegi" className="nav-link">
 						Zabiegi
 					</NavLink>
-					<NavLink to="/office" className="nav-link">
+					<NavLink to="/gabinet" className="nav-link">
 						Gabinet
 					</NavLink>
-					<NavLink to="/doctors" className="nav-link">
-						Lekarze
+					<NavLink to="/zespol" className="nav-link">
+						Zespół
 					</NavLink>
-					<NavLink to="/contact" className="nav-link">
+					<NavLink to="/kontakt" className="nav-link">
 						Kontakt
 					</NavLink>
 				</div>
@@ -56,16 +58,16 @@ const Navbar = () => {
 					<NavLink to="/" className="nav-link-mobile">
 						Strona Główna
 					</NavLink>
-					<NavLink to="/treatments" className="nav-link-mobile">
+					<NavLink to="/zabiegi" className="nav-link-mobile">
 						Zabiegi
 					</NavLink>
-					<NavLink to="/office" className="nav-link-mobile">
+					<NavLink to="/gabinet" className="nav-link-mobile">
 						Gabinet
 					</NavLink>
-					<NavLink to="/doctors" className="nav-link-mobile">
-						Lekarze
+					<NavLink to="/zespol" className="nav-link-mobile">
+						Zespół
 					</NavLink>
-					<NavLink to="/contact" className="nav-link-mobile">
+					<NavLink to="/kontakt" className="nav-link-mobile">
 						Kontakt
 					</NavLink>
 					<a href="#" className="nav-link-mobile mobile-btn">

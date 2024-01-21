@@ -78,6 +78,7 @@
 .bg-blur-left-hero {
 	top: 10%;
 	left: 0;
+	z-index: 1;
 }
 
 .bg-blur-right-hero {
@@ -195,6 +196,16 @@
 	}
 	.bg-blur-right-hero {
 		top: 120%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.hero {
+		.hero-text-container {
+			.hero-text {
+				font-size: 2.4rem;
+			}
+		}
 	}
 }
 

@@ -7,6 +7,7 @@ import { FaStar, FaQuoteRight } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { shortText } from "../../utils/shortText";
 import plus from "../../assets/icons/plus.svg";
+import google from "../../assets/icons/google.png";
 
 const Reviews = () => {
 	const settings = {
@@ -66,7 +67,6 @@ const Reviews = () => {
 												<FaStar className="review-star" />
 											)}
 										</div>
-										<p className="review-date">- 2 miesiące temu</p>
 									</div>
 									<p className="review-desc">{shortText(review.review, 200)}</p>
 
@@ -80,6 +80,15 @@ const Reviews = () => {
 						);
 					})}
 				</Slider>
+				<a
+					href="https://g.page/r/CQY3rSib4HAZEBM/review"
+					target="_blank"
+					rel="noreferrer">
+					<button className="reviews-btn">
+						<img src={google} alt="" className="reviews-google-icon" />
+						Zostaw Opinie
+					</button>
+				</a>
 			</div>
 		</div>
 	);

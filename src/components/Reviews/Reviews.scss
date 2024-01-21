@@ -57,10 +57,6 @@
 								font-size: 2rem;
 							}
 						}
-						.review-date {
-							font-size: 1.4rem;
-							color: $main-dark-blue;
-						}
 					}
 					.review-desc {
 						font-size: 1.2rem;
@@ -82,6 +78,24 @@
 				}
 			}
 		}
+		.reviews-btn {
+			display: flex;
+			align-items: center;
+			gap: 1em;
+			padding: 0.5em 1em;
+			margin: 0 auto;
+			margin-top: 2em;
+			font-size: 1.4rem;
+			color: $main-dark-blue;
+			background-color: white;
+			border-radius: 25px;
+			font-weight: 600;
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+			.reviews-google-icon {
+				width: 20px;
+			}
+		}
 	}
 }
 
@@ -100,6 +114,12 @@
 							}
 						}
 					}
+				}
+			}
+			.reviews-btn {
+				font-size: 1.8rem;
+				.reviews-google-icon {
+					width: 25px;
 				}
 			}
 		}
@@ -137,6 +157,12 @@
 					}
 				}
 			}
+			.reviews-btn {
+				font-size: 2rem;
+				.reviews-google-icon {
+					width: 30px;
+				}
+			}
 		}
 	}
 }
@@ -144,8 +170,7 @@
 @media screen and (min-width: 1100px) {
 	.reviews {
 		margin-top: 12em;
-		padding-top: 8em;
-		padding-bottom: 12em;
+		padding: 8em 0;
 		.review-container {
 			.slider-box {
 				display: flex;
@@ -208,6 +233,13 @@
 					}
 				}
 			}
+			.reviews-btn {
+				margin-top: 4em;
+				transition: all 0.3s ease;
+				&:hover {
+					background-color: #ddd;
+				}
+			}
 		}
 	}
 }
@@ -217,6 +249,18 @@
 		.review-container {
 			.review-heading-container {
 				margin-bottom: 4em;
+			}
+			.slider-box {
+				.review-item {
+					.review-content-container {
+						min-height: 180px;
+						.review-name-box {
+							.review-name {
+								font-size: 1.8rem;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
