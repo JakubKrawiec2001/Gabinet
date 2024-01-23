@@ -1,6 +1,44 @@
-.section-heading-contact {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    margin-top: 6em;
+@use "../../styles/colors" as *;
+
+.contact-container {
+	margin-bottom: 10em;
+	.section-heading-contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 4em;
+		
+	}
+	.map {
+		margin-top: 2em;
+		width: 100%;
+		height: 60vh;
+		border-top: 3px solid $main-dark-blue;
+		border-bottom: 3px solid $main-dark-blue;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.contact-container {
+		.map {
+			height: 40vh;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.contact-container {
+		.map {
+			height: 30vh;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.contact-container {
+		.map {
+			height: 50vh;
+		}
+	}
 }

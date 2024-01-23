@@ -1,6 +1,7 @@
 import { articles } from "../../data/articlesDB";
 import plus from "../../assets/icons/plus.svg";
 import "./Treatments.scss";
+import BlogPost from "../../components/BlogPost/BlogPost";
 
 const Treatments = () => {
 	return (
@@ -15,9 +16,9 @@ const Treatments = () => {
 				</h1>
 			</div>
 			<div className="treatments-content">
-				{/* {articles.map((article) => {
-					return <ArticleCart key={article.id} article={article}></ArticleCart>;
-				})} */}
+				{articles.map((article) => {
+					return <BlogPost key={article.id} article={article}></BlogPost>;
+				})}
 			</div>
 		</div>
 	);

@@ -35,14 +35,15 @@ const OpeningHours = () => {
 					</p>
 					<br />
 					<p className="oh-text">
-						Kontakt z Panią dr. Anetą Dojwa możliwy jest pod numerem:
+						Kontakt z Panią lek. Anetą Dojwa możliwy jest pod numerem:
 						<span className="oh-span"> 889 460 619 </span>. Pani Doktor służy
 						Państwu wiedzą i specjalistyczną opieką we
-						<span className="oh-span"> wtorki</span>.
+						<span className="oh-span"> wtorki</span>, po wcześniejszym umówieniu
+						wizyty.
 					</p>
 					<div className="oh-items-box">
 						<div className="oh-item">
-							<p className="oh-text oh-name">dr. Kamil Krawiec</p>
+							<p className="oh-text oh-name">lek. Kamil Krawiec</p>
 							<p className="oh-text">
 								<span className="oh-span">Poniedziałek:</span>&nbsp; 16:30 -
 								20:00
@@ -52,7 +53,7 @@ const OpeningHours = () => {
 							</p>
 						</div>
 						<div className="oh-item">
-							<p className="oh-text oh-name">dr. Arkadiusz Pawlik</p>
+							<p className="oh-text oh-name">lek. Arkadiusz Pawlik</p>
 							<p className="oh-text">
 								<span className="oh-span">Środa:</span>&nbsp; 16:30 - 20:00
 							</p>

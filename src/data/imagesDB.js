@@ -1,6 +1,7 @@
-import image from "../assets/images/article.jpg";
-import image2 from "../assets/images/hero-img.jpg";
-import image3 from "../assets/images/services-img-1.jpg";
+import image from "../assets/images/office-1.jpg";
+import image2 from "../assets/images/office-2.jpg";
+import image3 from "../assets/images/office-3.jpg";
+import image4 from "../assets/images/office-4.jpg";
 
 export const images = [
 	{
@@ -17,27 +18,27 @@ export const images = [
 	},
 	{
 		id: 4,
-		src: image2,
+		src: image4,
 	},
 	{
 		id: 5,
-		src: image2,
+		src: image,
 	},
 	{
 		id: 6,
-		src: image3,
+		src: image2,
 	},
 	{
 		id: 7,
-		src: image2,
-	},
-	{
-		id: 8,
 		src: image3,
 	},
 	{
+		id: 8,
+		src: image4,
+	},
+	{
 		id: 9,
-		src: image2,
+		src: image,
 	},
 	{
 		id: 10,
@@ -45,11 +46,11 @@ export const images = [
 	},
 	{
 		id: 11,
-		src: image,
+		src: image3,
 	},
 	{
 		id: 12,
-		src: image,
+		src: image4,
 	},
 	{
 		id: 13,
@@ -61,6 +62,6 @@ export const images = [
 	},
 	{
 		id: 15,
-		src: image2,
+		src: image3,
 	},
 ];

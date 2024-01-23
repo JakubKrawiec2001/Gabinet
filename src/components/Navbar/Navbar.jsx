@@ -1,9 +1,9 @@
 import "./Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
-import { MdPhoneInTalk } from "react-icons/md";
-import { IoMdMail } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useState } from "react";
+import logo from "../../assets/icons/logo.svg";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -11,8 +11,9 @@ const Navbar = () => {
 	return (
 		<nav className="navbar">
 			<div className="wrapper navbar-container">
-				<Link to="/">
-					<p className="logo">Uromed</p>
+				<Link to="/" className="logo-box">
+					<img src={logo} alt="" className="logo" />
+					<p className="logo-text">Uromed</p>
 				</Link>
 				<div className="nav-links">
 					<NavLink to="/" className="nav-link">
@@ -25,18 +26,22 @@ const Navbar = () => {
 						Gabinet
 					</NavLink>
 					<NavLink to="/zespol" className="nav-link">
-						Zespół
+						Lekarze
 					</NavLink>
 					<NavLink to="/kontakt" className="nav-link">
 						Kontakt
 					</NavLink>
 				</div>
 				<div className="navbar-r">
-					<div className="navbar-r-icons-box">
-						<MdPhoneInTalk className="navbar-r-icons" />
-						<IoMdMail className="navbar-r-icons" />
-					</div>
-					<a href="#" className="nav-btn">
+					<a
+						href="https://www.facebook.com/p/Uromed-Gabinety-Urologiczne-100063622451020/"
+						target="_blank"
+						rel="noreferrer"
+						className="navbar-r-icon">
+						<FaFacebook />
+					</a>
+
+					<a href="tel:883-615-060" className="nav-btn">
 						Umów Wizytę
 					</a>
 					{!open ? (
@@ -65,7 +70,7 @@ const Navbar = () => {
 						Gabinet
 					</NavLink>
 					<NavLink to="/zespol" className="nav-link-mobile">
-						Zespół
+						Lekarze
 					</NavLink>
 					<NavLink to="/kontakt" className="nav-link-mobile">
 						Kontakt

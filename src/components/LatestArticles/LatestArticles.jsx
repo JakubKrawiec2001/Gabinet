@@ -1,6 +1,7 @@
 import "./LatestArticles.scss";
 import plus from "../../assets/icons/plus.svg";
 import { articles } from "../../data/articlesDB";
+import BlogPost from "../BlogPost/BlogPost";
 
 const LatestArticles = () => {
 	return (
@@ -13,9 +14,9 @@ const LatestArticles = () => {
 				<h2 className="section-heading">Najnowsze wpisy i artykuły.</h2>
 			</div>
 			<div className="la-items-container">
-				{/* {articles.slice(0, 4).map((article) => {
-					return <ArticleCart key={article.id} article={article}></ArticleCart>;
-				})} */}
+				{articles.slice(0, 4).map((article) => {
+					return <BlogPost key={article.id} article={article}></BlogPost>;
+				})}
 			</div>
 			<div className="bg-blur bg-blur-right-la"></div>
 		</div>

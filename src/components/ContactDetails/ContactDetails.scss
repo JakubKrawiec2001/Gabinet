@@ -1,1 +1,120 @@
 @use "../../styles/colors" as *;
+.cd-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 2em;
+	margin-top: 2em;
+
+	.cd-item {
+		.cd-heading {
+			font-size: 2rem;
+			margin-bottom: 0.5em;
+			font-weight: 600;
+		}
+		.cd-doctor {
+			margin-top: 1em;
+			.cd-name {
+				font-weight: 600;
+				color: $main-green;
+			}
+		}
+		.cd-text {
+			font-size: 1.6rem;
+			margin-bottom: 0.2em;
+			.cd-span {
+				font-weight: 600;
+			}
+		}
+		.cd-fb-box {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5em;
+			margin-top: 1em;
+			color: $main-dark-blue;
+
+			.cd-fb-icon {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+@media screen and (min-width: 400px) {
+	.cd-container {
+		gap: 4em;
+		.cd-item {
+			.cd-heading {
+				font-size: 2.4rem;
+			}
+			.cd-text {
+				font-size: 2rem;
+			}
+			.cd-fb-box {
+				.cd-fb-icon {
+					font-size: 3rem;
+				}
+			}
+			.cd-doctor {
+				margin-top: 1.5em;
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.cd-container {
+		margin-top: 4em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.cd-container {
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+		gap: 0;
+		padding: 1em;
+		.cd-item {
+			.cd-heading {
+				font-size: 2.4rem;
+			}
+			.cd-text {
+				font-size: 2rem;
+			}
+			.cd-fb-box {
+				justify-content: flex-start;
+
+				.cd-fb-icon {
+					font-size: 3rem;
+				}
+			}
+
+			.cd-doctor {
+				margin-top: 1.5em;
+			}
+			&:first-child {
+				width: 30%;
+
+				.cd-text {
+					&:nth-child(4) {
+						margin-top: 1em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.cd-container {
+		.cd-item {
+			.cd-fb-box {
+				cursor: pointer;
+				transition: all 0.3s ease;
+				&:hover {
+					color: $main-green;
+				}
+			}
+		}
+	}
+}

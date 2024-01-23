@@ -1,0 +1,169 @@
+@use "../../styles/colors" as *;
+.team-container {
+	margin-top: 8em;
+
+	.section-heading-team {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.team-content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5em;
+		margin-top: 4em;
+
+		.team-item {
+			text-align: center;
+
+			.team-img-container {
+				position: relative;
+				width: 150px;
+				height: 160px;
+				background-color: $main-green-transparent;
+				border-radius: 10px;
+				overflow: hidden;
+				.team-img {
+					position: absolute;
+					bottom: -20%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 150%;
+				}
+			}
+			.team-name {
+				color: $main-dark-blue;
+				font-size: 1.4rem;
+				font-weight: 600;
+				margin-top: 1em;
+			}
+			.team-job {
+				margin-top: 0.5em;
+				color: $main-green;
+				font-size: 1.4rem;
+			}
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5) {
+				.team-img-container {
+					.team-img {
+						transform: translateX(-48%);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.team-container {
+		.team-content {
+			gap: 2.5em;
+			.team-item {
+				.team-img-container {
+					width: 160px;
+					height: 170px;
+				}
+				.team-name {
+					font-size: 1.6rem;
+				}
+				.team-job {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.team-container {
+		.team-content {
+			gap: 5em;
+			.team-item {
+				.team-img-container {
+					width: 160px;
+					height: 170px;
+				}
+				.team-name {
+					font-size: 1.6rem;
+				}
+				.team-job {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.team-container {
+		.team-content {
+			margin-top: 6em;
+			gap: 4.5em;
+			.team-item {
+				.team-img-container {
+					width: 200px;
+					height: 210px;
+				}
+				.team-name {
+					font-size: 1.8rem;
+				}
+				.team-job {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.team-container {
+		.team-content {
+			justify-content: space-between;
+			padding: 0 1em;
+			.team-item {
+				text-align: center;
+
+				.team-img-container {
+					width: 220px;
+					height: 230px;
+				}
+				.team-name {
+					font-size: 2rem;
+				}
+				.team-job {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1400px) {
+	.team-container {
+		margin-top: 16em;
+		.team-content {
+			.team-item {
+				.team-img-container {
+					width: 230px;
+					height: 240px;
+				}
+				.team-name {
+					font-size: 2.2rem;
+				}
+				.team-job {
+					font-size: 2.2rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.team-container {
+		.team-content {
+			padding: 0;
+		}
+	}
+}
