@@ -1,10 +1,10 @@
 @use "../../styles/colors" as *;
 .cd-container {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	gap: 2em;
-	margin-top: 2em;
 
 	.cd-item {
 		.cd-heading {
@@ -26,22 +26,35 @@
 				font-weight: 600;
 			}
 		}
-		.cd-fb-box {
+		.cd-fb-btn {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			gap: 0.5em;
+			margin: 0 auto;
 			margin-top: 1em;
-			color: $main-dark-blue;
-
+			padding: 0.5em 1em;
+			border-radius: 4px;
+			color: white;
+			background-color: #486cb4;
+			font-size: 1.6rem;
 			.cd-fb-icon {
 				font-size: 2rem;
 			}
 		}
 	}
+	.bg-blur-left-contact {
+		top: 10%;
+		left: 0;
+	}
+	.bg-blur-right-contact {
+		right: 0;
+		top: 70%;
+	}
 }
 @media screen and (min-width: 400px) {
 	.cd-container {
+		margin-top: 4em;
 		gap: 4em;
 		.cd-item {
 			.cd-heading {
@@ -50,7 +63,8 @@
 			.cd-text {
 				font-size: 2rem;
 			}
-			.cd-fb-box {
+			.cd-fb-btn {
+				font-size: 1.8rem;
 				.cd-fb-icon {
 					font-size: 3rem;
 				}
@@ -61,9 +75,18 @@
 		}
 	}
 }
+
 @media screen and (min-width: 768px) {
 	.cd-container {
-		margin-top: 4em;
+		.cd-item {
+			&:nth-child(1) {
+				.cd-text {
+					&:nth-child(4) {
+						padding: 1em;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -81,12 +104,8 @@
 			.cd-text {
 				font-size: 2rem;
 			}
-			.cd-fb-box {
-				justify-content: flex-start;
-
-				.cd-fb-icon {
-					font-size: 3rem;
-				}
+			.cd-fb-btn {
+				margin: 2em 0 0 0;
 			}
 
 			.cd-doctor {
@@ -101,6 +120,13 @@
 					}
 				}
 			}
+			&:nth-child(1) {
+				.cd-text {
+					&:nth-child(4) {
+						padding: 0;
+					}
+				}
+			}
 		}
 	}
 }
@@ -108,13 +134,70 @@
 @media screen and (min-width: 1100px) {
 	.cd-container {
 		.cd-item {
-			.cd-fb-box {
+			.cd-heading {
+				font-size: 2.8rem;
+			}
+			.cd-name {
+				font-size: 2.2rem;
+			}
+			.cd-fb-btn {
 				cursor: pointer;
 				transition: all 0.3s ease;
 				&:hover {
-					color: $main-green;
+					background-color: $main-dark-blue;
 				}
 			}
+		}
+		.bg-blur-left-contact {
+			top: 110%;
+		}
+		.bg-blur-right-contact {
+			top: 90%;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.cd-container {
+		margin-top: 8em;
+		.cd-item {
+			.cd-heading {
+				font-size: 3rem;
+			}
+			.cd-text {
+				font-size: 2.4rem;
+			}
+			.cd-fb-btn {
+				font-size: 2.4rem;
+				.cd-fb-icon {
+					font-size: 3.4rem;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1400px) {
+	.cd-container {
+		.cd-item {
+			.cd-heading {
+				font-size: 3.4rem;
+			}
+			.cd-name {
+				font-size: 2.6rem;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.cd-container {
+		padding: 0;
+		.bg-blur-left-contact {
+			left: -15%;
+		}
+		.bg-blur-right-contact {
+			top: 90%;
+			right: -15%;
 		}
 	}
 }

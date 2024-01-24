@@ -1,6 +1,163 @@
 @use "../../styles//colors" as *;
-.article {
-	margin-top: 5em;
-	color: black;
-	font-size: 5rem;
+.article-container {
+	position: relative;
+	padding: 0 1em;
+	color: $main-dark-blue;
+	margin-top: 4em;
+	.section-heading-container-article {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		text-align: left;
+	}
+	.article-desc {
+		margin-top: 1em;
+		font-size: 1.8rem;
+		width: 100%;
+		line-height: 1.6;
+	}
+	.article-img-container {
+		position: relative;
+		margin-top: 4em;
+		width: 100%;
+		height: 30vh;
+		border-radius: 10px;
+		overflow: hidden;
+
+		.article-img-shadow {
+			position: absolute;
+
+			width: 100%;
+			height: 100%;
+
+			background-color: rgba($main-dark-blue, 0.2);
+			z-index: 1;
+		}
+		.article-img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.article-content {
+		.article-text-heading {
+			font-weight: 600;
+			font-size: 2.2rem;
+			margin-top: 1.8em;
+		}
+		.article-text {
+			margin: 1.5em 0;
+			font-size: 1.6rem;
+			line-height: 1.6;
+		}
+	}
+	.bg-blur-left-article {
+		top: 10%;
+		left: 0;
+	}
+	.bg-blur-left-article-second {
+		top: 101%;
+		left: 0;
+	}
+	.bg-blur-right-article {
+		top: 35%;
+		right: 0;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.article-container {
+		.article-desc {
+			font-size: 2.2rem;
+		}
+
+		.article-content {
+			.article-text-heading {
+				font-size: 2.6rem;
+			}
+			.article-text {
+				font-size: 2rem;
+			}
+		}
+		.bg-blur-left-article {
+			top: 8%;
+		}
+
+		.bg-blur-right-article {
+			top: 38%;
+		}
+	}
+}
+@media screen and (min-width: 1024px) {
+	.article-container {
+		.article-desc {
+			font-size: 2.4rem;
+		}
+
+		.article-content {
+			.article-text-heading {
+				font-size: 3rem;
+			}
+			.article-text {
+				font-size: 2.1rem;
+			}
+		}
+		.bg-blur-left-article {
+			top: 8%;
+		}
+
+		.bg-blur-right-article {
+			top: 45%;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.article-container {
+		margin-top: 6em;
+		.article-desc {
+			width: 70%;
+		}
+		.article-img-container {
+			height: 50vh;
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.article-container {
+
+
+		.article-desc {
+			font-size: 2.4rem;
+			width: 60%;
+		}
+
+		.article-content {
+			.article-text-heading {
+				font-size: 3.4rem;
+			}
+			.article-text {
+				font-size: 2.2rem;
+			}
+		}
+		.bg-blur-left-article {
+			top: 10%;
+			left: -15%;
+		}
+		.bg-blur-left-article-second {
+			top: 80%;
+			left: -15%;
+		}
+		.bg-blur-right-article {
+			top: 50%;
+			right: -15%;
+		}
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.article-container {
+		padding: 0;
+	}
 }

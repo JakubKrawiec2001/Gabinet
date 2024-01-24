@@ -25,7 +25,7 @@ const Navbar = () => {
 					<NavLink to="/gabinet" className="nav-link">
 						Gabinet
 					</NavLink>
-					<NavLink to="/zespol" className="nav-link">
+					<NavLink to="/lekarze" className="nav-link">
 						Lekarze
 					</NavLink>
 					<NavLink to="/kontakt" className="nav-link">
@@ -69,7 +69,7 @@ const Navbar = () => {
 					<NavLink to="/gabinet" className="nav-link-mobile">
 						Gabinet
 					</NavLink>
-					<NavLink to="/zespol" className="nav-link-mobile">
+					<NavLink to="/lekarze" className="nav-link-mobile">
 						Lekarze
 					</NavLink>
 					<NavLink to="/kontakt" className="nav-link-mobile">

@@ -21,10 +21,11 @@ const ContactDetails = () => {
 				<a
 					href="https://www.facebook.com/p/Uromed-Gabinety-Urologiczne-100063622451020/"
 					target="_blank"
-					rel="noreferrer"
-					className="cd-text cd-fb-box">
-					<FaFacebook className="cd-fb-icon" />
-					Odwiedź nasz profil na Facebooku
+					rel="noreferrer">
+					<button className="cd-fb-btn">
+						<FaFacebook className="cd-fb-icon" />
+						Facebook
+					</button>
 				</a>
 			</div>
 			<div className="cd-item">
@@ -55,6 +56,9 @@ const ContactDetails = () => {
 					</p>
 				</div>
 			</div>
+
+			<div className="bg-blur bg-blur-left-contact"></div>
+			<div className="bg-blur bg-blur-right-contact"></div>
 		</div>
 	);
 };

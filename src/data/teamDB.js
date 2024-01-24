@@ -5,13 +5,13 @@ export const team = [
 	{
 		id: 1,
 		name: "lek. Kamil Krawiec",
-		job: "Urolog",
+		job: "Urolog FEBU",
 		img: avatar1,
 	},
 	{
 		id: 2,
 		name: "lek. Arkadiusz Pawlik",
-		job: "Urolog",
+		job: "Urolog FEBU",
 		img: avatar1,
 	},
 	{

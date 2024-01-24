@@ -11,7 +11,7 @@ const Services = () => {
 						<p className="section-heading-small-text">Zakres Porad</p>
 						<img src={plus} alt="" className="section-heading-icon" />
 					</div>
-					<h2 className="section-heading">Proponowane Usługi Medyczne.</h2>
+					<h2 className="section-heading">Usługi medyczne</h2>
 				</div>
 				<div className="services-content-container">
 					{services.map((item) => {

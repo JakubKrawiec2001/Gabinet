@@ -11,10 +11,13 @@ const Office = () => {
 					<img src={plus} alt="" className="section-heading-icon" />
 				</div>
 				<h1 className="section-heading section-office-heading">
-					Nasze Miejsce Pracy.
+					Nasze Miejsce Pracy
 				</h1>
 			</div>
 			<ImagesGallery></ImagesGallery>
+			<div className="bg-blur bg-blur-left-office"></div>
+			<div className="bg-blur bg-blur-left-office-second"></div>
+			<div className="bg-blur bg-blur-right-office"></div>
 		</div>
 	);
 };

@@ -58,6 +58,7 @@
 
 @media screen and (min-width: 400px) {
 	.oh-container {
+		margin-top: 6em;
 		.oh-l {
 			width: 350px;
 		}
@@ -73,7 +74,7 @@
 
 @media screen and (min-width: 768px) {
 	.oh-container {
-		margin-top: 6em;
+
 		flex-direction: row;
 		justify-content: space-between;
 		gap: 2em;
@@ -126,7 +127,7 @@
 
 @media screen and (min-width: 1200px) {
 	.oh-container {
-		margin-top: 12em;
+		margin-top: 10em;
 		.oh-l {
 			width: 500px;
 		}

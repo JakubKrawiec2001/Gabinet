@@ -10,7 +10,7 @@ const Team = () => {
 					<p className="section-heading-small-text">Pracownicy</p>
 					<img src={plus} alt="" className="section-heading-icon" />
 				</div>
-				<h2 className="section-heading">Poznaj Nasz Zespół.</h2>
+				<h2 className="section-heading">Nasz zespół</h2>
 			</div>
 			<div className="team-content">
 				{team.map((item) => {

@@ -54,7 +54,7 @@ const Reviews = () => {
 						<p className="section-heading-small-text">Opinie</p>
 						<img src={plus} alt="" className="section-heading-icon" />
 					</div>
-					<h2 className="section-heading">Sprawdź co mówią o nas inni.</h2>
+					<h2 className="section-heading">Wasze opinie</h2>
 				</div>
 				<Slider {...settings} className="slider-box">
 					{reviews.map((review) => {

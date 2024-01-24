@@ -1,6 +1,5 @@
 import "./Footer.scss";
 import { FaPhoneVolume, FaFacebook } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
 import { Link } from "react-router-dom";
 import provitaLogo from "../../assets/icons/Provita-logo.svg";
 
@@ -25,7 +24,7 @@ const Footer = () => {
 			<div className="wrapper footer-container">
 				<div className="footer-content">
 					<div className="footer-item">
-						<p className="footer-logo">Uromed.</p>
+						<p className="footer-logo">Uromed</p>
 						<p className="footer-text">
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui unde
 							dolores perferendis suscipit molestias placeat officiis, dolorum
@@ -34,7 +33,6 @@ const Footer = () => {
 						<div className="footer-icons-box">
 							<FaPhoneVolume className="footer-icon" />
 							<FaFacebook className="footer-icon" />
-							<IoMdMail className="footer-icon" />
 						</div>
 					</div>
 					<div className="footer-item">

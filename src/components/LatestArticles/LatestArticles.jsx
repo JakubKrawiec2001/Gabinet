@@ -11,7 +11,7 @@ const LatestArticles = () => {
 					<p className="section-heading-small-text">Aktualności</p>
 					<img src={plus} alt="" className="section-heading-icon" />
 				</div>
-				<h2 className="section-heading">Najnowsze wpisy i artykuły.</h2>
+				<h2 className="section-heading">Najnowsze artykuły</h2>
 			</div>
 			<div className="la-items-container">
 				{articles.slice(0, 4).map((article) => {

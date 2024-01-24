@@ -2,7 +2,7 @@
 
 .la-container {
 	position: relative;
-	margin-top: 6em;
+	margin-top: 4em;
 	.la-heading-container {
 		display: flex;
 		flex-direction: column;
@@ -20,6 +20,12 @@
 	}
 }
 
+@media screen and (min-width: 400px) {
+	.la-container {
+		margin-top: 6em;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.la-container {
 		.la-items-container {
@@ -30,15 +36,13 @@
 
 @media screen and (min-width: 1024px) {
 	.la-container {
-		.la-items-container {
-			margin-top: 6em;
-		}
+		margin-top: 8em;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.la-container {
-		margin-top: 16em;
+		margin-top: 14em;
 		.la-items-container {
 			margin-top: 8em;
 			justify-content: space-between;
@@ -46,7 +50,7 @@
 			padding: 1em;
 		}
 		.bg-blur-right-la {
-			top: 110%;
+			top: 60%;
 		}
 	}
 }
@@ -54,7 +58,7 @@
 @media screen and (min-width: 1600px) {
 	.la-container {
 		.bg-blur-right-la {
-			right: -12%;
+			right: -15%;
 		}
 	}
 }

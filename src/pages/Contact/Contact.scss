@@ -1,13 +1,12 @@
 @use "../../styles/colors" as *;
 
 .contact-container {
-	margin-bottom: 10em;
+	margin-top: 4em;
 	.section-heading-contact {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		margin-top: 4em;
-		
 	}
 	.map {
 		margin-top: 2em;
@@ -17,7 +16,6 @@
 		border-bottom: 3px solid $main-dark-blue;
 	}
 }
-
 
 @media screen and (min-width: 768px) {
 	.contact-container {
@@ -37,7 +35,9 @@
 
 @media screen and (min-width: 1200px) {
 	.contact-container {
+		margin-top: 6em;
 		.map {
+			margin-top: 4em;
 			height: 50vh;
 		}
 	}

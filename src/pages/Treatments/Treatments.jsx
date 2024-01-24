@@ -11,15 +11,16 @@ const Treatments = () => {
 					<p className="section-heading-small-text">Wszystkie Wpisy</p>
 					<img src={plus} alt="" className="section-heading-icon" />
 				</div>
-				<h1 className="section-heading">
-					Kompleksowa Diagnostyka i Leczenie Schorzeń Urologicznych.
-				</h1>
+				<h1 className="section-heading">Nasz Urologiczny Blog</h1>
 			</div>
 			<div className="treatments-content">
 				{articles.map((article) => {
 					return <BlogPost key={article.id} article={article}></BlogPost>;
 				})}
 			</div>
+			<div className="bg-blur bg-blur-left-treatments"></div>
+			<div className="bg-blur bg-blur-left-treatments-second"></div>
+			<div className="bg-blur bg-blur-right-treatments"></div>
 		</div>
 	);
 };

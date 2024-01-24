@@ -1,0 +1,69 @@
+@use "../../styles/colors" as *;
+.doctors {
+	position: relative;
+	margin-top: 4em;
+	.section-heading-container-doctors {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.doctors-heading-text {
+			margin-top: 0.5em;
+			width: 60%;
+			font-size: 2.6rem;
+			color: $main-dark-blue;
+			text-align: center;
+		}
+	}
+	.doctors-img-container {
+		.doctors-img {
+			width: 30%;
+		}
+	}
+
+	.bg-blur-left-doctors {
+		top: 2%;
+		left: 0;
+	}
+	.bg-blur-right-doctors {
+		top: 100%;
+		right: 0;
+	}
+	.bg-blur-left-doctors-second {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.doctors {
+		margin-top: 6em;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.doctors {
+		.bg-blur-left-doctors {
+			top: 5%;
+		}
+		.bg-blur-right-doctors {
+			top: 50%;
+		}
+		.bg-blur-left-doctors-second {
+			display: block;
+			top: 100%;
+		}
+	}
+}
+@media screen and (min-width: 1500px) {
+	.doctors {
+		.bg-blur-left-doctors {
+			top: 15%;
+			left: -15%;
+		}
+		.bg-blur-right-doctors {
+			right: -15%;
+		}
+		.bg-blur-left-doctors-second {
+			top: 90%;
+			left: -15%;
+		}
+	}
+}
