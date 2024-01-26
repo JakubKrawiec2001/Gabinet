@@ -1,9 +1,7 @@
 import "./Training.scss";
-import nurse from "../../assets/images/nurse.jpg";
 import plus from "../../assets/icons/plus.svg";
 import training1 from "../../assets/images/training-1.svg";
 import training2 from "../../assets/images/training-2.svg";
-import { FaPhoneAlt } from "react-icons/fa";
 
 const Training = () => {
 	return (
@@ -13,19 +11,19 @@ const Training = () => {
 					<p className="section-heading-small-text">Wiedza</p>
 					<img src={plus} alt="" className="section-heading-icon" />
 				</div>
-				<h2 className="section-heading">Szkolenia Uromed</h2>
+				<h2 className="section-heading">Dla pacjenta</h2>
 				<p className="training-heading-text">
-					Z dumą prezentujemy naszą inicjatywę – szkolenia prowadzone przez
-					doświadczone specjalistki, Panią Jolante Kucner i Marzannę Miller, w
-					domu pacjenta aby zapewnić komfort i prywatność.
+					Z dumą prezentujemy naszą inicjatywę w postaci wizyt prowadzonych
+					przez doświadczone specjalistki, Panią Jolante Kucner i Marzannę
+					Miller, w domu pacjenta aby zapewnić komfort i prywatność.
 				</p>
 			</div>
 			<div className="training-container">
 				<div className="training-l">
-					<p className="training-heading">Szkolenia pod okiem Jolanty Kucner</p>
+					<p className="training-heading">Spotkania z Jolantą Kucner</p>
 					<div className="training-box">
 						<p className="training-small-heading">
-							Szkolenie z samocewnikowania i obsługi sprzętu stomijnego
+							Wizyty z samocewnikowania i obsługi sprzętu stomijnego
 						</p>
 						<p className="training-text">
 							Podczas sesji uczestnicy zdobywają praktyczne umiejętności,
@@ -37,38 +35,36 @@ const Training = () => {
 					</div>
 					<div className="training-box">
 						<p className="training-small-heading">
-							Szkolenie z zakładania i wymiany cewników Foleya
+							Wizyty z zakładania i wymiany cewników Foleya
 						</p>
 						<p className="training-text">
 							Zakładanie i wymiana cewników Foleya wymagają specjalistycznej
-							wiedzy i umiejętności. Nasze szkolenie koncentruje się na
+							wiedzy i umiejętności. Nasze spotkania koncentrują się na
 							bezpieczeństwie pacjenta, zapewniając kompleksowe zrozumienie
 							procedur i praktyczne umiejętności, które pozwalają efektywnie
 							obsługiwać cewnik w warunkach domowych.
 						</p>
 					</div>
 					<p className="training-text training-phone">
-						Aby dowiedzieć się więcej na temat szkoleń Pani Jolanty Kucner
+						Aby dowiedzieć się więcej na temat współpracy z Panią Jolantą Kucner
 						zadzwoń - <span className="phone-span">792 663 601</span>
 					</p>
 				</div>
-				<div className="training-r">
-					<img src={training1} alt="" className="training-img" />
-				</div>
+
+				<img src={training1} alt="" className="training-img" />
+
 				<div className="bg-blur bg-blur-left-training"></div>
 			</div>
 			<div className="training-container">
 				<div className="training-l">
-					<p className="training-heading">
-						Szkolenia pod okiem Marzanny Miller
-					</p>
+					<p className="training-heading">Spotkania z Marzanną Miller</p>
 
 					<div className="training-box">
 						<p className="training-small-heading">
-							Szkolenie samodzielnego zdejmowania szwów
+							Wizyty na temat samodzielnego zdejmowania szwów
 						</p>
 						<p className="training-text">
-							Kompleksowe szkolenie dotyczące bezpiecznego usuwania szwów.
+							Kompleksowe spotkania dotyczące bezpiecznego usuwania szwów.
 							Podczas sesji uczestnicy zdobywają krok po kroku praktyczne
 							umiejętności, aby samodzielnie i bezpiecznie radzić sobie z
 							procesem usuwania szwów w warunkach domowych.
@@ -76,7 +72,7 @@ const Training = () => {
 					</div>
 					<div className="training-box">
 						<p className="training-small-heading">
-							Szkolenie na temat leczenie infekcji dożylnych i domięśniowych
+							Wizyty na temat leczenie infekcji dożylnych i domięśniowych
 						</p>
 						<p className="training-text">
 							Sesję obejmują profesjonalną instrukcję dotyczącą leczenia
@@ -87,13 +83,13 @@ const Training = () => {
 						</p>
 					</div>
 					<p className="training-text">
-						Aby dowiedzieć się więcej na temat szkoleń Pani Marzanny Miller
-						zadzwoń - <span className="phone-span">690 568 577</span>
+						Aby dowiedzieć się więcej na temat współpracy z Panią Marzanną
+						Miller zadzwoń - <span className="phone-span">690 568 577</span>
 					</p>
 				</div>
-				<div className="training-r">
-					<img src={training2} alt="" className="training-img" />
-				</div>
+
+				<img src={training2} alt="" className="training-img" />
+
 				<div className="bg-blur bg-blur-right-training"></div>
 			</div>
 		</div>
