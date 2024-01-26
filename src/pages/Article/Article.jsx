@@ -22,7 +22,7 @@ const Article = () => {
 							<p className="article-desc">{article.desc}</p>
 							<div className="article-img-container">
 								<div className="article-img-shadow"></div>
-								<img src={article.img} alt="" className="article-img" />
+								<img src={article.img} alt="" className="article-img" loading="lazy"/>
 							</div>
 							<div className="article-content">
 								<p className="article-text">{article.content}</p>

@@ -27,6 +27,7 @@ const ImagesGallery = () => {
 							<img
 								src={image.src}
 								alt=""
+								loading="lazy"
 								className="images-gallery-item"
 								onClick={() => {
 									handleSelectImage(image.src);
@@ -46,6 +47,7 @@ const ImagesGallery = () => {
 					alt=""
 					className={`popup-image`}
 					onClick={handleClosePopup}
+					loading="lazy"
 				/>
 			</div>
 		</>

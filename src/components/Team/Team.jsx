@@ -17,7 +17,7 @@ const Team = () => {
 					return (
 						<div className="team-item" key={item.id}>
 							<div className="team-img-container">
-								<img src={item.img} alt="" className="team-img" />
+								<img src={item.img} alt="" className="team-img" loading="lazy"/>
 							</div>
 							<p className="team-name">{item.name}</p>
 							<p className="team-job">{item.job}</p>

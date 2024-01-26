@@ -2,7 +2,6 @@ import "./Hero.scss";
 import heroImg from "../../assets/images/hero-img.jpg";
 import plus from "../../assets/icons/plus.svg";
 
-
 const Hero = () => {
 	return (
 		<>
@@ -37,7 +36,7 @@ const Hero = () => {
 						</a>
 					</div>
 				</div>
-				<img src={heroImg} alt="" className="hero-img" />
+				<img src={heroImg} alt="" className="hero-img" loading="eager" />
 				<div className="hero-img-border"></div>
 			</div>
 			<div className="bg-blur bg-blur-left-hero"></div>

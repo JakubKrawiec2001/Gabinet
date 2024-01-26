@@ -16,7 +16,7 @@ const Doctors = () => {
 			<div className="doctors-container">
 				<div className="doctors-item">
 					<div className="doctors-img-container">
-						<img src={avatar} alt="" className="doctors-img" />
+						<img src={avatar} alt="" className="doctors-img" loading="lazy"/>
 					</div>
 					<div className="doctors-content">
 						<p className="doctors-name">lek. Kamil Krawiec</p>
@@ -43,7 +43,7 @@ const Doctors = () => {
 				</div>
 				<div className="doctors-item">
 					<div className="doctors-img-container">
-						<img src={avatar} alt="" className="doctors-img" />
+						<img src={avatar} alt="" className="doctors-img" loading="lazy"/>
 					</div>
 					<div className="doctors-content">
 						<p className="doctors-name">lek. Arkadiusz Pawlik</p>

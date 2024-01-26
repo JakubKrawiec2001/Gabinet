@@ -7,7 +7,7 @@ const BlogPost = ({ article }) => {
 	const { title, desc, img, path } = article;
 	return (
 		<div className="blog-post-container">
-			<img src={img} alt="" className="blog-post-img" />
+			<img src={img} alt="" className="blog-post-img" loading="lazy"/>
 			<div className="blog-post-content">
 				<p className="blog-post-title">{title}</p>
 				<p className="blog-post-desc">{shortText(desc, 100)}</p>

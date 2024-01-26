@@ -51,7 +51,7 @@ const Training = () => {
 					</p>
 				</div>
 
-				<img src={training1} alt="" className="training-img" />
+				<img src={training1} alt="" className="training-img" loading="lazy"/>
 
 				<div className="bg-blur bg-blur-left-training"></div>
 			</div>
@@ -88,7 +88,7 @@ const Training = () => {
 					</p>
 				</div>
 
-				<img src={training2} alt="" className="training-img" />
+				<img src={training2} alt="" className="training-img" loading="lazy"/>
 
 				<div className="bg-blur bg-blur-right-training"></div>
 			</div>
