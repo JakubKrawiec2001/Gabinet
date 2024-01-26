@@ -1,5 +1,5 @@
 import "./Doctors.scss";
-import avatar from "../../assets/icons/avatar-1.svg";
+import avatar from "../../assets/icons/doctor.png";
 import plus from "../../assets/icons/plus.svg";
 
 const Doctors = () => {
@@ -11,10 +11,7 @@ const Doctors = () => {
 					<img src={plus} alt="" className="section-heading-icon" />
 				</div>
 				<h1 className="section-heading">Poznaj Naszych Specjalistów</h1>
-				<p className="doctors-heading-text">
-					Dowiedz się więcej o naszych lekarzach, ich bogatym doświadczeniu oraz
-					dniach przyjęć poniżej.
-				</p>
+				
 			</div>
 			<div className="doctors-container">
 				<div className="doctors-item">
@@ -29,9 +26,19 @@ const Doctors = () => {
 							dziedzinie urologii uzyskał w 2017r. Związany z Oddziałem
 							Urologicznym Szpitala Powiatowgo w Radomsku.
 						</p>
-						<a href="">
-							<button className="doctors-btn">Umów Wizytę</button>
-						</a>
+						<div className="doctors-btns-box">
+							<a href="tel:883-615-060">
+								<button className="doctors-btn">Umów wizytę</button>
+							</a>
+							<a
+								href="https://www.znanylekarz.pl/kamil-krawiec/urolog/lodz"
+								target="_blank"
+								rel="noreferrer">
+								<button className="doctors-btn read-more-btn">
+									Czytaj więcej
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div className="doctors-item">
@@ -46,9 +53,19 @@ const Doctors = () => {
 							dziedzinie urologii uzyskał w 2020r. Związany z Oddziałem
 							Urologicznym Szpitala Powiatowego w Radomsku
 						</p>
-						<a href="">
-							<button className="doctors-btn">Umów Wizytę</button>
-						</a>
+						<div className="doctors-btns-box">
+							<a href="tel:883-615-060">
+								<button className="doctors-btn">Umów wizytę</button>
+							</a>
+							<a
+								href="https://placowki.mp.pl/unit/index.html?id=842611"
+								target="_blank"
+								rel="noreferrer">
+								<button className="doctors-btn read-more-btn">
+									Czytaj więcej
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

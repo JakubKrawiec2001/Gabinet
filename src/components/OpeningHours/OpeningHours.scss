@@ -74,7 +74,6 @@
 
 @media screen and (min-width: 768px) {
 	.oh-container {
-
 		flex-direction: row;
 		justify-content: space-between;
 		gap: 2em;
@@ -163,8 +162,5 @@
 @media screen and (min-width: 1600px) {
 	.oh-container {
 		padding: 0;
-		.oh-r {
-			width: 55%;
-		}
 	}
 }

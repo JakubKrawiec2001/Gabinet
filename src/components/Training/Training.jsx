@@ -1,0 +1,103 @@
+import "./Training.scss";
+import nurse from "../../assets/images/nurse.jpg";
+import plus from "../../assets/icons/plus.svg";
+import training1 from "../../assets/images/training-1.svg";
+import training2 from "../../assets/images/training-2.svg";
+import { FaPhoneAlt } from "react-icons/fa";
+
+const Training = () => {
+	return (
+		<div className="training wrapper">
+			<div className="section-heading-container section-heading-training">
+				<div className="section-heading-small-text-box">
+					<p className="section-heading-small-text">Wiedza</p>
+					<img src={plus} alt="" className="section-heading-icon" />
+				</div>
+				<h2 className="section-heading">Szkolenia Uromed</h2>
+				<p className="training-heading-text">
+					Z dumą prezentujemy naszą inicjatywę – szkolenia prowadzone przez
+					doświadczone specjalistki, Panią Jolante Kucner i Marzannę Miller, w
+					domu pacjenta aby zapewnić komfort i prywatność.
+				</p>
+			</div>
+			<div className="training-container">
+				<div className="training-l">
+					<p className="training-heading">Szkolenia pod okiem Jolanty Kucner</p>
+					<div className="training-box">
+						<p className="training-small-heading">
+							Szkolenie z samocewnikowania i obsługi sprzętu stomijnego
+						</p>
+						<p className="training-text">
+							Podczas sesji uczestnicy zdobywają praktyczne umiejętności,
+							obejmujące właściwe techniki samocewnikowania oraz obsługę sprzętu
+							stomijnego. Dzięki naszym doświadczonym instruktorom, pacjenci
+							zyskują pewność siebie w obszarze, który często może być
+							wyzwaniem.
+						</p>
+					</div>
+					<div className="training-box">
+						<p className="training-small-heading">
+							Szkolenie z zakładania i wymiany cewników Foleya
+						</p>
+						<p className="training-text">
+							Zakładanie i wymiana cewników Foleya wymagają specjalistycznej
+							wiedzy i umiejętności. Nasze szkolenie koncentruje się na
+							bezpieczeństwie pacjenta, zapewniając kompleksowe zrozumienie
+							procedur i praktyczne umiejętności, które pozwalają efektywnie
+							obsługiwać cewnik w warunkach domowych.
+						</p>
+					</div>
+					<p className="training-text training-phone">
+						Aby dowiedzieć się więcej na temat szkoleń Pani Jolanty Kucner
+						zadzwoń - <span className="phone-span">792 663 601</span>
+					</p>
+				</div>
+				<div className="training-r">
+					<img src={training1} alt="" className="training-img" />
+				</div>
+				<div className="bg-blur bg-blur-left-training"></div>
+			</div>
+			<div className="training-container">
+				<div className="training-l">
+					<p className="training-heading">
+						Szkolenia pod okiem Marzanny Miller
+					</p>
+
+					<div className="training-box">
+						<p className="training-small-heading">
+							Szkolenie samodzielnego zdejmowania szwów
+						</p>
+						<p className="training-text">
+							Kompleksowe szkolenie dotyczące bezpiecznego usuwania szwów.
+							Podczas sesji uczestnicy zdobywają krok po kroku praktyczne
+							umiejętności, aby samodzielnie i bezpiecznie radzić sobie z
+							procesem usuwania szwów w warunkach domowych.
+						</p>
+					</div>
+					<div className="training-box">
+						<p className="training-small-heading">
+							Szkolenie na temat leczenie infekcji dożylnych i domięśniowych
+						</p>
+						<p className="training-text">
+							Sesję obejmują profesjonalną instrukcję dotyczącą leczenia
+							infekcji dożylnych i domięśniowych. Dzielimy się wiedzą na temat
+							odpowiednich procedur, środków ostrożności i działań, które mogą
+							być podjęte w przypadku infekcji, aby zapewnić pełne zrozumienie i
+							umiejętności pacjenta.
+						</p>
+					</div>
+					<p className="training-text">
+						Aby dowiedzieć się więcej na temat szkoleń Pani Marzanny Miller
+						zadzwoń - <span className="phone-span">690 568 577</span>
+					</p>
+				</div>
+				<div className="training-r">
+					<img src={training2} alt="" className="training-img" />
+				</div>
+				<div className="bg-blur bg-blur-right-training"></div>
+			</div>
+		</div>
+	);
+};
+
+export default Training;

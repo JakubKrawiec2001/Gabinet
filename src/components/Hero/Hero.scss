@@ -46,17 +46,32 @@
 			margin-top: 1em;
 			color: $main-dark-blue;
 		}
-		.hero-btn {
-			margin-top: 1.2em;
-			padding: 0.5em 0.8em;
-			border-radius: 10px;
-			background-color: $main-green;
-			color: $white;
-			font-weight: 600;
-			font-size: 1.4rem;
-			transition: all 0.3s ease;
-			&:hover {
-				background-color: $main-dark-blue;
+		.hero-btns-box {
+			display: flex;
+			justify-content: center;
+			gap: 2em;
+
+			.hero-btn {
+				margin-top: 1.2em;
+				padding: 0.5em 0.8em;
+				border-radius: 4px;
+				background-color: $main-green;
+				border: 3px solid $main-green;
+				color: white;
+				font-weight: 600;
+				font-size: 1.4rem;
+				transition: all 0.3s ease;
+				&:hover {
+					background-color: $main-dark-blue;
+					border: 3px solid $main-dark-blue;
+				}
+			}
+			.hero-btn-border {
+				background: none;
+				color: $main-green;
+				&:hover {
+					color: white;
+				}
 			}
 		}
 	}
@@ -105,8 +120,10 @@
 			.hero-text {
 				font-size: 1.7rem;
 			}
-			.hero-btn {
-				font-size: 1.7rem;
+			.hero-btns-box {
+				.hero-btn {
+					font-size: 1.7rem;
+				}
 			}
 		}
 	}
@@ -130,6 +147,9 @@
 				.section-heading-small-text-box {
 					justify-content: flex-start;
 				}
+			}
+			.hero-btns-box {
+				justify-content: flex-start;
 			}
 		}
 		.hero-img {
@@ -189,8 +209,10 @@
 				font-size: 2rem;
 				margin-top: 1.5em;
 			}
-			.hero-btn {
-				font-size: 2rem;
+			.hero-btns-box {
+				.hero-btn {
+					font-size: 2rem;
+				}
 			}
 		}
 		.hero-img {
@@ -217,8 +239,10 @@
 			.hero-text {
 				font-size: 2.4rem;
 			}
-			.hero-btn {
-				font-size: 2.4rem;
+			.hero-btns-box {
+				.hero-btn {
+					font-size: 2.4rem;
+				}
 			}
 		}
 	}

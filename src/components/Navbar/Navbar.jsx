@@ -42,7 +42,7 @@ const Navbar = () => {
 					</a>
 
 					<a href="tel:883-615-060" className="nav-btn">
-						Umów Wizytę
+						Umów wizytę
 					</a>
 					{!open ? (
 						<IoMenu
@@ -60,25 +60,55 @@ const Navbar = () => {
 					className={
 						open ? "nav-links-mobile open-mobile-nav" : "nav-links-mobile"
 					}>
-					<NavLink to="/" className="nav-link-mobile">
+				
+					<NavLink
+						to="/"
+						className="nav-link-mobile"
+						onClick={() => setOpen(false)}>
 						Strona Główna
 					</NavLink>
-					<NavLink to="/zabiegi" className="nav-link-mobile">
+					<NavLink
+						to="/zabiegi"
+						className="nav-link-mobile"
+						onClick={() => setOpen(false)}>
 						Zabiegi
 					</NavLink>
-					<NavLink to="/gabinet" className="nav-link-mobile">
+					<NavLink
+						to="/gabinet"
+						className="nav-link-mobile"
+						onClick={() => setOpen(false)}>
 						Gabinet
 					</NavLink>
-					<NavLink to="/lekarze" className="nav-link-mobile">
+					<NavLink
+						to="/lekarze"
+						className="nav-link-mobile"
+						onClick={() => setOpen(false)}>
 						Lekarze
 					</NavLink>
-					<NavLink to="/kontakt" className="nav-link-mobile">
+					<NavLink
+						to="/kontakt"
+						className="nav-link-mobile"
+						onClick={() => setOpen(false)}>
 						Kontakt
 					</NavLink>
-					<a href="#" className="nav-link-mobile mobile-btn">
+					<a
+						href="tel:883-615-060"
+						className="nav-link-mobile mobile-link"
+						onClick={() => setOpen(false)}>
 						Umów Wizytę
 					</a>
+
+					<a
+						href="https://www.facebook.com/p/Uromed-Gabinety-Urologiczne-100063622451020/"
+						target="_blank"
+						rel="noreferrer">
+						<button className="mobile-btn">
+							<FaFacebook className="mobile-btn-icon" />
+							Facebook
+						</button>
+					</a>
 				</div>
+				{open && <div className="mobile-shadow"></div>}
 			</div>
 		</nav>
 	);

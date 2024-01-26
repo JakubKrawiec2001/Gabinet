@@ -27,6 +27,18 @@ export const team = [
 		img: avatar2,
 	},
 	{
+		id: 4,
+		name: "mgr. Jolanta Kucner",
+		job: "Pielęgniarka",
+		img: avatar2,
+	},
+	{
+		id: 4,
+		name: "mgr. Marzanna Miller",
+		job: "Pielęgniarka",
+		img: avatar2,
+	},
+	{
 		id: 5,
 		name: "Karolina Adrjenko",
 		job: "Recepcja",

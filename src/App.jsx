@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./hooks/useScrollToTop";
 import Article from "./pages/Article/Article";
 import Doctors from "./pages/Doctors/Doctors";
+import ScrollButton from "./components/ScrollButton/ScrollButton";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 				<Route path="/lekarze" element={<Doctors></Doctors>}></Route>
 				<Route path="/kontakt" element={<Contact></Contact>}></Route>
 			</Routes>
+			<ScrollButton></ScrollButton>
 			<Footer></Footer>
 		</div>
 	);

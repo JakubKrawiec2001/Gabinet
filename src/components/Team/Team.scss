@@ -22,7 +22,7 @@
 				width: 150px;
 				height: 160px;
 				background-color: $main-green-transparent;
-				border-radius: 10px;
+				border-radius: 4px;
 				overflow: hidden;
 				.team-img {
 					position: absolute;
@@ -60,7 +60,6 @@
 	.team-container {
 		margin-top: 6em;
 		.team-content {
-			gap: 2.5em;
 			.team-item {
 				.team-img-container {
 					width: 160px;
@@ -80,7 +79,8 @@
 @media screen and (min-width: 768px) {
 	.team-container {
 		.team-content {
-			gap: 5em;
+			justify-content: center;
+			gap: 3.4em;
 			.team-item {
 				.team-img-container {
 					width: 160px;
@@ -99,6 +99,9 @@
 @media screen and (min-width: 1024px) {
 	.team-container {
 		margin-top: 8em;
+		.team-content {
+			gap: 4em;
+		}
 	}
 }
 
@@ -107,7 +110,8 @@
 		margin-top: 14em;
 		.team-content {
 			margin-top: 6em;
-			gap: 4.5em;
+			gap: 5.5em;
+
 			.team-item {
 				.team-img-container {
 					width: 200px;
@@ -127,8 +131,7 @@
 @media screen and (min-width: 1300px) {
 	.team-container {
 		.team-content {
-			justify-content: space-between;
-			padding: 0 1em;
+			gap: 4.5em;
 			.team-item {
 				text-align: center;
 
@@ -149,6 +152,7 @@
 @media screen and (min-width: 1400px) {
 	.team-container {
 		.team-content {
+			gap: 3.2em;
 			.team-item {
 				.team-img-container {
 					width: 230px;

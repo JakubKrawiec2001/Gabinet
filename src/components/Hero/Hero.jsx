@@ -1,7 +1,7 @@
 import "./Hero.scss";
 import heroImg from "../../assets/images/hero-img.jpg";
 import plus from "../../assets/icons/plus.svg";
-import { Link } from "react-router-dom";
+
 
 const Hero = () => {
 	return (
@@ -28,9 +28,14 @@ const Hero = () => {
 						Stworzyliśmy miejsce gdzie otrzymają Państwo poradę, pomoc oraz
 						możliwość diagnostyki urologicznej.
 					</p>
-					<Link to="/zespol">
-						<button className="hero-btn">Poznaj Nas</button>
-					</Link>
+					<div className="hero-btns-box">
+						<a href="#team">
+							<button className="hero-btn">Poznaj nas</button>
+						</a>
+						<a href="tel:883-615-060">
+							<button className="hero-btn hero-btn-border">Umów wizytę</button>
+						</a>
+					</div>
 				</div>
 				<img src={heroImg} alt="" className="hero-img" />
 				<div className="hero-img-border"></div>

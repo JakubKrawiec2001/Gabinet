@@ -50,6 +50,7 @@
 			}
 			.burger-menu-btn {
 				font-size: 3rem;
+				z-index: 10;
 			}
 		}
 		.nav-links-mobile {
@@ -59,16 +60,47 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			gap: 2em;
+			gap: 3em;
 			padding: 1em;
-			width: 30vh;
+			width: 40vh;
 			height: 100vh;
 			background-color: $main-dark-blue;
 			transition: all 0.3s ease;
+			z-index: 1000;
+
 			.nav-link-mobile {
 				font-size: 2rem;
+				font-weight: 300;
 				color: $white;
 			}
+			.mobile-link {
+				font-weight: 600;
+				color: $main-green;
+			}
+			.mobile-btn {
+				display: flex;
+				align-items: center;
+				gap: 0.5em;
+				margin-top: 1em;
+				padding: 0.5em 0.8em;
+				font-size: 1.8rem;
+				color: white;
+				border-radius: 4px;
+				background-color: #486cb4;
+				.mobile-btn-icon {
+					font-size: 2.4rem;
+				}
+			}
+		}
+		.mobile-shadow {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100vh;
+			height: 100vh;
+			background-color: rgba($main-dark-blue, 0.6);
 		}
 		.open-mobile-nav {
 			left: 0;
@@ -97,6 +129,25 @@
 	}
 }
 
+@media screen and (min-width: 400px) {
+	.navbar {
+		.navbar-container {
+			.nav-links-mobile {
+				padding: 2em;
+				.nav-link-mobile {
+					font-size: 2.8rem;
+				}
+				.mobile-btn {
+					font-size: 2.4rem;
+					.mobile-btn-icon {
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.navbar {
 		padding: 1.5em;
@@ -116,11 +167,32 @@
 					font-size: 1.8rem;
 					background-color: $main-dark-blue;
 					color: $white;
-					border-radius: 10px;
+					border-radius: 4px;
 					font-weight: 600;
 					transition: all 0.3s ease;
 					&:hover {
 						background-color: $main-green;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.navbar {
+		.navbar-container {
+			.nav-links-mobile {
+				width: 30vh;
+				padding: 2em;
+				gap: 4em;
+				.nav-link-mobile {
+					font-size: 3.4rem;
+				}
+				.mobile-btn {
+					font-size: 2.8rem;
+					.mobile-btn-icon {
+						font-size: 3.4rem;
 					}
 				}
 			}

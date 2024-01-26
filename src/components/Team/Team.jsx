@@ -4,7 +4,7 @@ import "./Team.scss";
 
 const Team = () => {
 	return (
-		<div className="team-container wrapper">
+		<div className="team-container wrapper" id="team">
 			<div className="section-heading-container section-heading-team">
 				<div className="section-heading-small-text-box">
 					<p className="section-heading-small-text">Pracownicy</p>

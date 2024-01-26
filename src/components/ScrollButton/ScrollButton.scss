@@ -1,0 +1,33 @@
+@use "../../styles/colors" as *;
+
+.scroll-to-top-icon {
+	position: fixed;
+	bottom: 5%;
+	right: 3%;
+	font-size: 5rem;
+	color: $main-orange;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	animation: appear 0.3s forwards;
+	z-index: 1000;
+	&:hover {
+		color: $main-green;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.scroll-to-top-icon {
+		display: none;
+	}
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+		bottom: -5%;
+	}
+	to {
+		bottom: 5%;
+		opacity: 1;
+	}
+}
