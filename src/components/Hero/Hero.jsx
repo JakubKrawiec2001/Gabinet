@@ -36,11 +36,10 @@ const Hero = () => {
 						</a>
 					</div>
 				</div>
-				<img src={heroImg} alt="" className="hero-img" loading="eager" />
+				<img src={heroImg} alt="" className="hero-img" />
 				<div className="hero-img-border"></div>
 			</div>
-			<div className="bg-blur bg-blur-left-hero"></div>
-			<div className="bg-blur bg-blur-right-hero"></div>
+		
 		</>
 	);
 };

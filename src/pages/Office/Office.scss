@@ -10,17 +10,6 @@
 			font-size: 3rem;
 		}
 	}
-	.bg-blur-left-office {
-		top: 2%;
-		left: 0;
-	}
-	.bg-blur-right-office {
-		top: 100%;
-		right: 0;
-	}
-	.bg-blur-left-office-second {
-		display: none;
-	}
 }
 
 @media screen and (min-width: 400px) {
@@ -52,32 +41,6 @@
 			.section-office-heading {
 				font-size: 5rem;
 			}
-		}
-		.bg-blur-left-office {
-			top: 5%;
-		}
-		.bg-blur-right-office {
-			top: 50%;
-		}
-		.bg-blur-left-office-second {
-			display: block;
-			top: 100%;
-		}
-	}
-}
-@media screen and (min-width: 1500px) {
-	.office-container {
-		.bg-blur-left-office {
-			top: 5%;
-			left: -15%;
-		}
-		.bg-blur-right-office {
-			top: 40%;
-			right: -15%;
-		}
-		.bg-blur-left-office-second {
-			top: 90%;
-			left: -15%;
 		}
 	}
 }

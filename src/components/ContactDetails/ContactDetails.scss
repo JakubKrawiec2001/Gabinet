@@ -43,14 +43,6 @@
 			}
 		}
 	}
-	.bg-blur-left-contact {
-		top: 10%;
-		left: 0;
-	}
-	.bg-blur-right-contact {
-		right: 0;
-		top: 70%;
-	}
 }
 @media screen and (min-width: 400px) {
 	.cd-container {
@@ -148,12 +140,6 @@
 				}
 			}
 		}
-		.bg-blur-left-contact {
-			top: 110%;
-		}
-		.bg-blur-right-contact {
-			top: 90%;
-		}
 	}
 }
 
@@ -192,12 +178,5 @@
 @media screen and (min-width: 1500px) {
 	.cd-container {
 		padding: 0;
-		.bg-blur-left-contact {
-			left: -15%;
-		}
-		.bg-blur-right-contact {
-			top: 90%;
-			right: -15%;
-		}
 	}
 }

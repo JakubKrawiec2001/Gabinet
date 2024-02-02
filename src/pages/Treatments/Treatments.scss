@@ -15,17 +15,6 @@
 		margin-top: 4em;
 		padding: 1em;
 	}
-	.bg-blur-left-treatments {
-		top: 2%;
-		left: 0;
-	}
-	.bg-blur-right-treatments {
-		top: 100%;
-		right: 0;
-	}
-	.bg-blur-left-treatments-second {
-		display: none;
-	}
 }
 
 @media screen and (min-width: 1100px) {
@@ -48,17 +37,7 @@
 @media screen and (min-width: 1400px) {
 	.treatments-container {
 		.treatments-content {
-			gap: 2.6em;
-		}
-		.bg-blur-left-treatments {
-			top: 5%;
-		}
-		.bg-blur-right-treatments {
-			top: 50%;
-		}
-		.bg-blur-left-treatments-second {
-			display: block;
-			top: 100%;
+			gap: 2.5em;
 		}
 	}
 }
@@ -67,17 +46,6 @@
 	.treatments-container {
 		.treatments-content {
 			padding: 0;
-		}
-		.bg-blur-left-treatments {
-			top: 15%;
-			left: -15%;
-		}
-		.bg-blur-right-treatments {
-			right: -15%;
-		}
-		.bg-blur-left-treatments-second {
-			top: 90%;
-			left: -15%;
 		}
 	}
 }

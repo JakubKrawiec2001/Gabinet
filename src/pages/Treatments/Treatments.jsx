@@ -18,9 +18,6 @@ const Treatments = () => {
 					return <BlogPost key={article.id} article={article}></BlogPost>;
 				})}
 			</div>
-			<div className="bg-blur bg-blur-left-treatments"></div>
-			<div className="bg-blur bg-blur-left-treatments-second"></div>
-			<div className="bg-blur bg-blur-right-treatments"></div>
 		</div>
 	);
 };

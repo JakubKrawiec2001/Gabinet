@@ -26,7 +26,7 @@ const ImagesGallery = () => {
 						<div className="images-gallery-box" key={image.id}>
 							<img
 								src={image.src}
-								alt=""
+								alt="The appearance of a urology office"
 								loading="lazy"
 								className="images-gallery-item"
 								onClick={() => {
@@ -44,7 +44,7 @@ const ImagesGallery = () => {
 				<IoIosCloseCircle className="popup-icon" onClick={handleClosePopup} />
 				<img
 					src={selectedImage}
-					alt=""
+					alt="The appearance of a urology office"
 					className={`popup-image`}
 					onClick={handleClosePopup}
 					loading="lazy"

@@ -26,7 +26,7 @@ const Services = () => {
 					})}
 				</div>
 
-				<div className="bg-blur bg-blur-left-services"></div>
+				
 			</div>
 		</>
 	);

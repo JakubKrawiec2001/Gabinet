@@ -11,12 +11,11 @@ const Doctors = () => {
 					<img src={plus} alt="" className="section-heading-icon" />
 				</div>
 				<h1 className="section-heading">Poznaj Naszych Specjalistów</h1>
-				
 			</div>
 			<div className="doctors-container">
 				<div className="doctors-item">
 					<div className="doctors-img-container">
-						<img src={avatar} alt="" className="doctors-img" loading="lazy"/>
+						<img src={avatar} alt="" className="doctors-img" loading="lazy" />
 					</div>
 					<div className="doctors-content">
 						<p className="doctors-name">lek. Kamil Krawiec</p>
@@ -43,7 +42,7 @@ const Doctors = () => {
 				</div>
 				<div className="doctors-item">
 					<div className="doctors-img-container">
-						<img src={avatar} alt="" className="doctors-img" loading="lazy"/>
+						<img src={avatar} alt="Doctor avatar" className="doctors-img" />
 					</div>
 					<div className="doctors-content">
 						<p className="doctors-name">lek. Arkadiusz Pawlik</p>
@@ -69,9 +68,7 @@ const Doctors = () => {
 					</div>
 				</div>
 			</div>
-			<div className="bg-blur bg-blur-left-doctors"></div>
-			<div className="bg-blur bg-blur-left-doctors-second"></div>
-			<div className="bg-blur bg-blur-right-doctors"></div>
+		
 		</div>
 	);
 };

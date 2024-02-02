@@ -22,7 +22,12 @@ const Article = () => {
 							<p className="article-desc">{article.desc}</p>
 							<div className="article-img-container">
 								<div className="article-img-shadow"></div>
-								<img src={article.img} alt="" className="article-img" loading="lazy"/>
+								<img
+									src={article.img}
+									alt="Cover of the article"
+									className="article-img"
+									loading="lazy"
+								/>
 							</div>
 							<div className="article-content">
 								<p className="article-text">{article.content}</p>
@@ -33,9 +38,7 @@ const Article = () => {
 								<p className="article-text">{article.contentThree}</p>
 								<p className="article-text">{article.contentFour}</p>
 							</div>
-							<div className="bg-blur bg-blur-left-article"></div>
-							<div className="bg-blur bg-blur-left-article-second"></div>
-							<div className="bg-blur bg-blur-right-article"></div>
+							
 						</div>
 					);
 				}

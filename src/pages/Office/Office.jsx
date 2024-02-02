@@ -15,9 +15,7 @@ const Office = () => {
 				</h1>
 			</div>
 			<ImagesGallery></ImagesGallery>
-			<div className="bg-blur bg-blur-left-office"></div>
-			<div className="bg-blur bg-blur-left-office-second"></div>
-			<div className="bg-blur bg-blur-right-office"></div>
+			
 		</div>
 	);
 };

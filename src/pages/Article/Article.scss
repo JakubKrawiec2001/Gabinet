@@ -51,18 +51,6 @@
 			line-height: 1.6;
 		}
 	}
-	.bg-blur-left-article {
-		top: 10%;
-		left: 0;
-	}
-	.bg-blur-left-article-second {
-		top: 101%;
-		left: 0;
-	}
-	.bg-blur-right-article {
-		top: 35%;
-		right: 0;
-	}
 }
 
 @media screen and (min-width: 400px) {
@@ -79,13 +67,6 @@
 				font-size: 2rem;
 			}
 		}
-		.bg-blur-left-article {
-			top: 8%;
-		}
-
-		.bg-blur-right-article {
-			top: 38%;
-		}
 	}
 }
 @media screen and (min-width: 1024px) {
@@ -101,13 +82,6 @@
 			.article-text {
 				font-size: 2.1rem;
 			}
-		}
-		.bg-blur-left-article {
-			top: 8%;
-		}
-
-		.bg-blur-right-article {
-			top: 45%;
 		}
 	}
 }
@@ -126,8 +100,6 @@
 
 @media screen and (min-width: 1400px) {
 	.article-container {
-
-
 		.article-desc {
 			font-size: 2.4rem;
 			width: 60%;
@@ -140,18 +112,6 @@
 			.article-text {
 				font-size: 2.2rem;
 			}
-		}
-		.bg-blur-left-article {
-			top: 10%;
-			left: -15%;
-		}
-		.bg-blur-left-article-second {
-			top: 80%;
-			left: -15%;
-		}
-		.bg-blur-right-article {
-			top: 50%;
-			right: -15%;
 		}
 	}
 }

@@ -57,8 +57,6 @@ const ContactDetails = () => {
 				</div>
 			</div>
 
-			<div className="bg-blur bg-blur-left-contact"></div>
-			<div className="bg-blur bg-blur-right-contact"></div>
 		</div>
 	);
 };

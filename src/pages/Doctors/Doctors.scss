@@ -80,18 +80,6 @@
 			}
 		}
 	}
-
-	.bg-blur-left-doctors {
-		top: 2%;
-		left: 0;
-	}
-	.bg-blur-right-doctors {
-		top: 100%;
-		right: 0;
-	}
-	.bg-blur-left-doctors-second {
-		display: none;
-	}
 }
 
 @media screen and (min-width: 768px) {
@@ -180,31 +168,6 @@
 					}
 				}
 			}
-		}
-		.bg-blur-left-doctors {
-			top: 5%;
-		}
-		.bg-blur-right-doctors {
-			top: 50%;
-		}
-		.bg-blur-left-doctors-second {
-			display: block;
-			top: 100%;
-		}
-	}
-}
-@media screen and (min-width: 1500px) {
-	.doctors {
-		.bg-blur-left-doctors {
-			top: 15%;
-			left: -15%;
-		}
-		.bg-blur-right-doctors {
-			right: -15%;
-		}
-		.bg-blur-left-doctors-second {
-			top: 90%;
-			left: -15%;
 		}
 	}
 }

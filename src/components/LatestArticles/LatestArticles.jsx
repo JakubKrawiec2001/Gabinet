@@ -18,7 +18,7 @@ const LatestArticles = () => {
 					return <BlogPost key={article.id} article={article}></BlogPost>;
 				})}
 			</div>
-			<div className="bg-blur bg-blur-right-la"></div>
+		
 		</div>
 	);
 };

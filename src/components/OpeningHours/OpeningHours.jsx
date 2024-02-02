@@ -10,14 +10,35 @@ const OpeningHours = () => {
 		<div className="oh-container wrapper">
 			<div className="oh-l">
 				<div className="col">
-					<img src={image1} alt="" className="oh-image" loading="lazy" />
+					<img
+						src={image1}
+						alt="
+The main corridor of the office"
+						className="oh-image"
+						loading="lazy"
+					/>
 
-					<img src={image2} alt="" className="oh-image" loading="lazy" />
+					<img
+						src={image2}
+						alt="Office waiting room"
+						className="oh-image"
+						loading="lazy"
+					/>
 				</div>
 				<div className="col">
-					<img src={image3} alt="" className="oh-image" loading="lazy" />
+					<img
+						src={image3}
+						alt="Patient admission room"
+						className="oh-image"
+						loading="lazy"
+					/>
 
-					<img src={image4} alt="" className="oh-image" loading="lazy" />
+					<img
+						src={image4}
+						alt="Patient admission room"
+						className="oh-image"
+						loading="lazy"
+					/>
 				</div>
 			</div>
 			<div className="oh-r">

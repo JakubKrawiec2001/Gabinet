@@ -26,13 +26,19 @@ const Footer = () => {
 					<div className="footer-item">
 						<p className="footer-logo">Uromed</p>
 						<p className="footer-text">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui unde
-							dolores perferendis suscipit molestias placeat officiis, dolorum
-							aperiam mollitia distinctio?
+							Stworzyliśmy miejsce gdzie otrzymają Państwo poradę, pomoc oraz
+							możliwość diagnostyki urologicznej.
 						</p>
 						<div className="footer-icons-box">
-							<FaPhoneVolume className="footer-icon" />
-							<FaFacebook className="footer-icon" />
+							<a href="tel:883-615-060">
+								<FaPhoneVolume className="footer-icon" />
+							</a>
+							<a
+								href="https://www.facebook.com/p/Uromed-Gabinety-Urologiczne-100063622451020/"
+								target="_blank"
+								rel="noreferrer">
+								<FaFacebook className="footer-icon" />
+							</a>
 						</div>
 					</div>
 					<div className="footer-item">
